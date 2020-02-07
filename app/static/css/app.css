@@ -1,3 +1,29 @@
 body {
+	font-style: Arial;
     padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+button {
+	background-color: #6CC513;
+	font-weight: bold;
+}
+
+header {
+	color: white;
+}
+
+h1 {
+	color: #35AB6C;
+}
+
+main {
+	text-align: center;
+	background-color: #F3E5C2;
+}
+
+#statistics {
+	font-weight: bold;
 }
