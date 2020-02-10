@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Sabreen's Profile</title>
-		<link rel="stylesheet" href="/static/css/app.css">
-	</head>
-	<body>
-		<header>
-			<img src="" alt="Profle pic"></img>
-			<h1>Sabreen Hasan</h1>
-			<p>uwimona@shasan</p>
-			<p>Joined February, 2020</p>
-		</header>
+{% extends "base.html" %}
 
-		<main>
-			<p>I am a smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p>
+	{% block css %}
+		<link rel="stylesheet" href="{{url_for('static', filename='app.css') }}" />
+	{% endblock %}
+	
+	{% block main %}
+		<img src="" alt="Profle pic"></img>
+		<h1>Sabreen Hasan</h1>
+		<p>uwimona@shasan</p>
+		<p>Joined February, 2020</p>
+		<hr><br><br>
+	
+		<p>I am a smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p><br>
 
-			<p id="statistics">7</p>
-			<p id="statistics">100</p>
-			<p id="statistics">250</p><br>
+		<p id="statistics">7</p>
+		<p id="statistics">100</p>
+		<p id="statistics">250</p><br>
 
-			<p>Posts</p>
-			<p>Following</p>
-			<p>Followers</p>
-			<button>Follow</button>
-		</main>
-	</body>
-</html>
+		<p>Posts</p>
+		<p>Following</p>
+		<p>Followers</p>
+		<button>Follow</button>
+	{% endblock %}

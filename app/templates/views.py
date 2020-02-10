@@ -5,8 +5,15 @@ Werkzeug Documentation:  http://werkzeug.pocoo.org/documentation/
 This file creates your application.
 """
 
+import datetime
+
 from flask import Flask, render_template
 app = Flask(__name__)
+
+def format_date_joined():
+    now = datetime.datetime.now()
+    format_date_joined = datetime.date(2019, 2, 7)
+    print "Joined" + date_joined.strftime("%B, %Y")
 
 @app.route('/profile')
 def profile():
