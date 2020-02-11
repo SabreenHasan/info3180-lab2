@@ -1,22 +1,26 @@
 {% extends "base.html" %}
 
-		<link rel="stylesheet" href="{{url_for('static', filename='app.css') }}" />
+		<link rel="stylesheet" href="{{url_for('static', filename='css/app.css') }}" />
 	
 	{% block main %}
-		<img src="" alt="Profle pic"></img>
-		<h1>Sabreen Hasan</h1>
-		<p>uwimona@shasan</p>
-		<p>Joined February, 2020</p>
-		<hr><br><br>
+		<div id="topSection">
+			<img src="{{url_for('static', filename='20171205_154437.jpg') }}" alt="Profle pic"></img>
+			<h1>Sabreen Hasan</h1>
+			<p>uwimona@shasan</p>
+			<p>{{ new_date }}</p>
+			<hr><br><br>
+		</div>
 	
-		<p>I am a smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p><br>
+		<div id="bottomSection">
+			<p>I am a smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</p><br>
 
-		<p id="statistics">7</p>
-		<p id="statistics">100</p>
-		<p id="statistics">250</p><br>
+			<p id="statistics">7</p>
+			<p id="statistics">100</p>
+			<p id="statistics">250</p><br>
 
-		<p>Posts</p>
-		<p>Following</p>
-		<p>Followers</p>
-		<button>Follow</button>
+			<p>Posts</p>
+			<p>Following</p>
+			<p>Followers</p>
+			<button>Follow</button>
+		</div>
 	{% endblock %}
